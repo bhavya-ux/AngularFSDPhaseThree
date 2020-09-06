@@ -1,0 +1,16 @@
+<div>
+    <h3 style="text-decoration: underline;">Add Admin</h3>
+    <table border="1px">
+        <tr>
+            <td><input type="number" [(ngModel)]="admin.adminId" placeholder="Admin ID"></td>
+        </tr>
+        <tr>
+            <td><input type="text" [(ngModel)]="admin.adminName" placeholder="Admin Name"></td>
+        </tr>
+        <tr>
+            <td><input type="text" [(ngModel)]="admin.adminPass" placeholder="Admin Pass"></td>
+        </tr>
+        <button (click)="addadmin()">Add</button>
+    </table>
+    </div>
+   

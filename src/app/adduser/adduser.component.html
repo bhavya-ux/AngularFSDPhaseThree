@@ -1,0 +1,31 @@
+<div>
+    <h3 style="text-decoration: underline;">Add User</h3>
+    <table border="1px">
+        <tr>
+            <td><input type="number" [(ngModel)]="user.id" placeholder="User ID"></td>
+        </tr>
+        <tr>
+            <td><input type="text" [(ngModel)]="user.firstName" placeholder="First Name"></td>
+        </tr>
+        <tr>
+            <td><input type="text" [(ngModel)]="user.lastName" placeholder="Last Name"></td>
+        </tr>
+        <tr>
+            <td><input type="number" [(ngModel)]="user.age" placeholder="User Age"></td>
+        </tr>
+        <tr>
+            <td><input type="text" [(ngModel)]="user.address" placeholder="Address"></td>
+        </tr>
+        <tr>
+            <td><input type="text" [(ngModel)]="user.registeredDate" placeholder="User Registered Date"></td>
+        </tr>
+        <tr>
+            <td><input type="text" [(ngModel)]="user.password" placeholder="User Password"></td>
+        </tr>
+        <tr>
+            <td><input type="text" [(ngModel)]="user.emailId" placeholder="User Mail ID"></td>
+        </tr>
+        <button (click)="adduser()">Add</button>
+    </table>
+    </div>
+   

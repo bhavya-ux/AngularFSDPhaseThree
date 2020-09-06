@@ -1,0 +1,23 @@
+<div class = "container">
+  <div class="heading" align = "center">
+    <h3>Welcome to {{title}}</h3>
+    </div>
+      <div>
+      <ul>
+       <li><a routerLink="/productlist">All products</a></li>
+       <li><a routerLink="/productById">Search Product By Id</a></li>
+       <li><a routerLink="/userlist">All Users list</a></li>
+       <li><a routerLink="/addproduct">Add Product</a></li>
+       <li><a routerLink="/userById">Search User By Id</a></li>
+       <li><a routerLink="/adduser">Add User</a></li>
+       <li><a routerLink="/adminlist">All Admins</a></li>
+       <li><a routerLink ="/addadmin">Add Admin</a></li>
+      </ul>
+    </div>
+   
+ <div align="center">
+      <router-outlet></router-outlet>
+    </div> 
+
+
+</div>

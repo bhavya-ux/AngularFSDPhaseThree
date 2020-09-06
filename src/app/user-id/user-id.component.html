@@ -1,0 +1,37 @@
+<ng-container *ngIf="!userid">
+    <div>
+        <h3 style="text-decoration: underline;">Search for your user!</h3>
+        <table border="1px">
+            <tr>
+                <td><input type="number" [(ngModel)]="id" placeholder="Enter ID"></td>
+            </tr>
+        </table>
+        <button (click)="searchuser()">Search!</button>
+    </div>
+</ng-container>
+
+<table border="1px" *ngIf = "userid">
+    <thead>
+     <th>User ID</th>
+     <th>Address</th>
+     <th>User Age/th>
+     <th>Email Id</th>
+     <th>First Name</th>
+     <th>Last Name</th>
+     <th>Password</th>
+     <th>Registered Date</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{userid.id}}</td>
+            <td>{{userid.address}}</td>
+            <td>{{userid.age}}</td>
+            <td>{{userid.emailId}}</td>
+            <td>{{userid.firstName}}</td>
+            <td>{{userid.lastName}}</td>
+            <td>{{userid.password}}</td>
+            <td>{{userid.registeredDate}}</td>
+        </tr>
+    </tbody>
+</table>
+

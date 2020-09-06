@@ -1,0 +1,28 @@
+<ng-container *ngIf="!productid">
+    <div>
+        <h3 style="text-decoration: underline;">Search for your product!</h3>
+        <table border="1px">
+            <tr>
+                <td><input type="number" [(ngModel)]="id" placeholder="Enter ID"></td>
+            </tr>
+        </table>
+        <button (click)="searchproduct()">Search!</button>
+    </div>
+</ng-container>
+
+<table border="1px" *ngIf = "productid">
+    <thead>
+     <th>Product ID</th>
+     <th>Updated Date</th>
+     <th>Product Price</th>
+     <th>Product Name</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{productid.productId}}</td>
+            <td>{{productid.dateAdded}}</td>
+            <td>{{productid.price}}</td>
+            <td>{{productid.productName}}</td>
+        </tr>
+    </tbody>
+</table>

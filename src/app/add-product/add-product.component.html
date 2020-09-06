@@ -1,0 +1,25 @@
+<div>
+    <h3 style="text-decoration: underline;">Add Product</h3>
+    <table border="1px">
+        <tr>
+            <td><input type="number" [(ngModel)]="product.productId" placeholder="Product ID"></td>
+        </tr>
+        <tr>
+            <td><input type="text" [(ngModel)]="product.productName" placeholder="Product Name"></td>
+        </tr>
+        <tr>
+            <td><input type="text" [(ngModel)]="product.dateAdded" placeholder="Updated Date"></td>
+        </tr>
+        <tr>
+            <td><input type="number" [(ngModel)]="product.price" placeholder="Product Price"></td>
+        </tr>
+        <tr>
+            <td><input type="number" [(ngModel)]="product.productgrp.productgroupId" placeholder="Product Group ID"></td>
+        </tr>
+        <tr>
+            <td><input type="text" [(ngModel)]="product.productgrp.productgroupName" placeholder="Product Group Name"></td>
+        </tr>
+        <button (click)="addproduct()">Add</button>
+    </table>
+    </div>
+    

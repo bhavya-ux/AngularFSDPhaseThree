@@ -1,0 +1,15 @@
+
+<table border="1px" >
+    <thead>
+        <th>Admin Id</th>
+        <th>Admin Name</th>
+        <th>Admin Password</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let i of adminlist">
+            <td>{{i.adminId}}</td>
+            <td>{{i.adminName}}</td>
+            <td>{{i.adminPass}}</td>
+        </tr>
+    </tbody>
+</table>
